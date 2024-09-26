@@ -5,11 +5,11 @@ import math
 class Vector:
     def __init__(
             self,
-            x: int | float,
-            y: int | float
+            x_coordinate: int | float,
+            y_coordinate: int | float
     ) -> None:
-        self.x = round(x, 2)
-        self.y = round(y, 2)
+        self.x = round(x_coordinate, 2)
+        self.y = round(y_coordinate, 2)
 
     def __add__(self, other: Vector) -> Vector:
         new_x = round(self.x + other.x, 2)
